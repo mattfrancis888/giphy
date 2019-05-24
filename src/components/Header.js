@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-light bg-light justify-content-md-around border-bottom fixed-top">
-        <a class="navbar-brand">GIPHY</a>
+      <nav className="navbar navbar-light bg-light justify-content-md-around border-bottom fixed-top py-4">
+        <a className="navbar-brand">GIPHY</a>
         <div className="border p-2 bg-white">
           <form className="form-inline">
             <input className="form-control border-0 search-input" type="search" placeholder="Search..." aria-label="Search"/>

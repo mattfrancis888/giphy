@@ -345,4 +345,20 @@ body {
   font: bold 6rem helvetica, arial, sans-serif;
 }
 
+.body-container {
+  padding: 13rem 5rem;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    padding-top: 10rem;
+  }
+}
+
+.gif-list-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
