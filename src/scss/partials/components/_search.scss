@@ -1,0 +1,25 @@
+.form-inline{
+  flex-flow: row nowrap ;
+}
+
+.search-icon-img {
+  width: 5rem;
+  height: 1.8rem;
+  fill: $dark-grey;
+  cursor:pointer;
+}
+
+.search-input{
+  font: bold 2rem $fallback-fonts;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+
+.form-control{
+  font: bold 2rem $fallback-fonts;
+  &:focus{
+    box-shadow: none;
+  }
+}

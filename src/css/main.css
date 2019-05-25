@@ -327,19 +327,6 @@ body {
   font: 1.1rem helvetica, arial, sans-serif;
 }
 
-.search-icon-img {
-  width: 5rem;
-  height: 1.8rem;
-  fill: #222;
-}
-
-.form-inline {
-  flex-flow: row nowrap;
-}
-
-.search-input {
-  font: bold 2rem helvetica, arial, sans-serif;
-}
 .navbar-brand {
   color: black;
   font: bold 6rem helvetica, arial, sans-serif;
@@ -356,8 +343,7 @@ body {
 
 .gif-list-ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   padding: 0 !important;
 }
 
@@ -365,6 +351,71 @@ body {
   height: 23rem;
   border: 1px solid black;
   padding: 0;
+}
+
+.form-inline {
+  flex-flow: row nowrap;
+}
+
+.search-icon-img {
+  width: 5rem;
+  height: 1.8rem;
+  fill: #222;
+  cursor: pointer;
+}
+
+.search-input {
+  font: bold 2rem helvetica, arial, sans-serif;
+  outline: none;
+}
+.search-input:focus {
+  outline: none;
+}
+
+.form-control {
+  font: bold 2rem helvetica, arial, sans-serif;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.no-gifs {
+  color: #7bcbc4;
+  height: 14rem;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  color: black;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fdd;
+  border-color: #fdd transparent #fdd transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

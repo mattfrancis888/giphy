@@ -3,14 +3,15 @@ import axios from 'axios';
 import { API_KEY } from './constants';
 import Header from './components/Header.js';
 import Body from './components/Body.js';
+import Loading from './components/Loading.js';
 class App extends Component {
 
   constructor(){
     super();
     this.state={
-      gifs:[]
+      gifs:[],
+      loading:true
     };
-    console.log('construcotr');
   }
 
   performSearch = query =>{
@@ -18,7 +19,8 @@ class App extends Component {
     .then( (response) => {
       // handle success
       this.setState({
-        gifs: response.data.data
+        gifs: response.data.data,
+        loading:false
       });
       console.log('Response:', response);
     })
@@ -33,7 +35,8 @@ class App extends Component {
     .then( (response) => {
       // handle success
       this.setState({
-        gifs: response.data.data
+        gifs: response.data.data,
+        loading: false
       });
       console.log('Response:', response);
     })
@@ -47,7 +50,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header performSearch ={this.performSearch}/>
-        <Body gifs={this.state.gifs} />
+        {
+          (this.state.loading) ? <Loading/> : <Body gifs={this.state.gifs} />
+        }
       </div>
     );
   }
