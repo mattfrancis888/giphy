@@ -4,7 +4,7 @@ import GifList from './GifList';
 
 const Body = (props) => {
   return (
-    <body className="body-container">
+    <div className="body-container">
       <div className="container-fluid">
         <div className="row">
           <div className="col">
@@ -12,7 +12,7 @@ const Body = (props) => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 
