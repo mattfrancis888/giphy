@@ -5,8 +5,7 @@ import NoGifs from './NoGifs'
 const GifList = (props) => {
   let gifs;
   if(props.data.length > 0){
-    gifs = props.data.map( gif => {
-        console.log('key',gif.id)
+    gifs = props.data.map( (gif,index) => {
         return <Gif url={gif.images.fixed_height.url} key={gif.id}/>
      });
  } else{
